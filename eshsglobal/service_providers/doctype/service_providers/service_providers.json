@@ -1,0 +1,364 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-05 10:53:02.810821",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "uuid",
+  "emirates_id",
+  "emirates_id_encrypted",
+  "emirates_id_expiry_date",
+  "emirates_id_front_photo",
+  "emirates_id_back_photo",
+  "first_name",
+  "first_name_encrypted",
+  "last_name",
+  "last_name_encrypted",
+  "email",
+  "email_encrypted",
+  "phone",
+  "phone_encrypted",
+  "date_of_birth",
+  "gender",
+  "nationality",
+  "profile_photo",
+  "provider_type",
+  "license_number",
+  "license_number_encrypted",
+  "license_expiry",
+  "license_issuing_authority",
+  "dha_registration",
+  "dha_registration_encrypted",
+  "clinic_hospital_name",
+  "experience_years",
+  "qualification",
+  "mfa_enabled",
+  "mfa_secret",
+  "mfa_backup_codes",
+  "rating",
+  "total_bookings",
+  "completed_bookings",
+  "cancelled_bookings",
+  "current_latitude",
+  "current_longitude",
+  "is_online",
+  "is_available",
+  "is_verified",
+  "verified_at",
+  "verified_by",
+  "account_status",
+  "last_location_update",
+  "last_login_at",
+  "last_login_ip",
+  "created_at",
+  "updated_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "uuid",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "UUID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "emirates_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Emirates Id",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "emirates_id_encrypted",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Emirates Id Encrypted",
+   "reqd": 1
+  },
+  {
+   "fieldname": "emirates_id_expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Emirates Id Expiry Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "emirates_id_front_photo",
+   "fieldtype": "Attach Image",
+   "label": "Emirates Id Front Photo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "emirates_id_back_photo",
+   "fieldtype": "Attach Image",
+   "label": "Emirates Id Back Photo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "first_name_encrypted",
+   "fieldtype": "Text",
+   "label": "First Name Encrypted",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name_encrypted",
+   "fieldtype": "Text",
+   "label": "Last Name Encrypted",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "unique": 1
+  },
+  {
+   "fieldname": "email_encrypted",
+   "fieldtype": "Text",
+   "label": "Email Encrypted"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "phone_encrypted",
+   "fieldtype": "Text",
+   "label": "Phone Encrypted",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "male\nfemale\nother"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "profile_photo",
+   "fieldtype": "Attach Image",
+   "label": "Profile Photo"
+  },
+  {
+   "fieldname": "provider_type",
+   "fieldtype": "Select",
+   "label": "Provider Type",
+   "options": "pathologist\nradiologist\ndoctor\nnurse\nphysiotherapist\ngeneral",
+   "reqd": 1
+  },
+  {
+   "fieldname": "license_number",
+   "fieldtype": "Data",
+   "label": "License Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "license_number_encrypted",
+   "fieldtype": "Text",
+   "label": "License Number Encrypted",
+   "reqd": 1
+  },
+  {
+   "fieldname": "license_expiry",
+   "fieldtype": "Date",
+   "label": "License Expiry",
+   "reqd": 1
+  },
+  {
+   "fieldname": "license_issuing_authority",
+   "fieldtype": "Data",
+   "label": "License Issuing Authority",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dha_registration",
+   "fieldtype": "Data",
+   "label": "DHA Registration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dha_registration_encrypted",
+   "fieldtype": "Text",
+   "label": "DHA Registration Encrypted",
+   "reqd": 1
+  },
+  {
+   "fieldname": "clinic_hospital_name",
+   "fieldtype": "Data",
+   "label": "Clinic Hospital Name"
+  },
+  {
+   "fieldname": "experience_years",
+   "fieldtype": "Int",
+   "label": "Experience Years"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Text",
+   "label": "Qualification"
+  },
+  {
+   "default": "0",
+   "fieldname": "mfa_enabled",
+   "fieldtype": "Check",
+   "label": "MFA Enabled"
+  },
+  {
+   "fieldname": "mfa_secret",
+   "fieldtype": "Text",
+   "label": "MFA Secret"
+  },
+  {
+   "fieldname": "mfa_backup_codes",
+   "fieldtype": "Text",
+   "label": "MFA Backup Codes"
+  },
+  {
+   "default": "0",
+   "fieldname": "rating",
+   "fieldtype": "Float",
+   "label": "Rating"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_bookings",
+   "fieldtype": "Int",
+   "label": "Total Bookings"
+  },
+  {
+   "default": "0",
+   "fieldname": "completed_bookings",
+   "fieldtype": "Int",
+   "label": "Completed Bookings"
+  },
+  {
+   "default": "0",
+   "fieldname": "cancelled_bookings",
+   "fieldtype": "Int",
+   "label": "Cancelled Bookings"
+  },
+  {
+   "fieldname": "current_latitude",
+   "fieldtype": "Float",
+   "label": "Current Latitude"
+  },
+  {
+   "fieldname": "current_longitude",
+   "fieldtype": "Float",
+   "label": "Current Longitude"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_online",
+   "fieldtype": "Check",
+   "label": "Is Online"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_available",
+   "fieldtype": "Check",
+   "label": "Is Available"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_verified",
+   "fieldtype": "Check",
+   "label": "Is Verified"
+  },
+  {
+   "fieldname": "verified_at",
+   "fieldtype": "Datetime",
+   "label": "Verified At"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Int",
+   "label": "Verified By"
+  },
+  {
+   "fieldname": "account_status",
+   "fieldtype": "Select",
+   "label": "Account Status",
+   "options": "pending\nactive\nexpired\nsuspended\ninactive"
+  },
+  {
+   "fieldname": "last_location_update",
+   "fieldtype": "Datetime",
+   "label": "Last Location Update"
+  },
+  {
+   "fieldname": "last_login_at",
+   "fieldtype": "Datetime",
+   "label": "Last Login At"
+  },
+  {
+   "fieldname": "last_login_ip",
+   "fieldtype": "Data",
+   "label": "Last Login IP"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At"
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Datetime",
+   "label": "Updated At"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-05 11:13:14.812262",
+ "modified_by": "Administrator",
+ "module": "Service Providers",
+ "name": "Service Providers",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

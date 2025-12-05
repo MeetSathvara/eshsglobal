@@ -1,0 +1,279 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-03 17:28:54.820392",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "uuid",
+  "emirates_id",
+  "emirates_id_expiry_date",
+  "emirates_id_front_photo",
+  "emirates_id_back_photo",
+  "passport_number",
+  "passport_expiry_date",
+  "passport_photo",
+  "email",
+  "phone",
+  "phone_country_code",
+  "first_name",
+  "last_name",
+  "date_of_birth",
+  "gender",
+  "nationality",
+  "profile_photo",
+  "language_preference",
+  "is_verified",
+  "otp",
+  "otp_expires_at",
+  "data_consent_given",
+  "data_consent_at",
+  "data_consent_ip",
+  "sharing_consent_given",
+  "sharing_consent_at",
+  "medical_consent_given",
+  "medical_consent_at",
+  "teleconsult_recording_consent",
+  "column_break_giig",
+  "account_status",
+  "last_login_at",
+  "last_login_ip",
+  "created_at",
+  "updated_at",
+  "data_retention_until",
+  "user_link"
+ ],
+ "fields": [
+  {
+   "fieldname": "uuid",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "UUID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "emirates_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Emirates Id",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "emirates_id_expiry_date",
+   "fieldtype": "Date",
+   "label": "Emirates Id Date"
+  },
+  {
+   "fieldname": "emirates_id_front_photo",
+   "fieldtype": "Attach Image",
+   "label": "Emirates Id Front Photo"
+  },
+  {
+   "fieldname": "emirates_id_back_photo",
+   "fieldtype": "Attach Image",
+   "label": "Emirates Id Back Photo"
+  },
+  {
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "label": "Passport Number"
+  },
+  {
+   "fieldname": "passport_expiry_date",
+   "fieldtype": "Date",
+   "label": "Passport Expiry Date"
+  },
+  {
+   "fieldname": "passport_photo",
+   "fieldtype": "Attach Image",
+   "label": "Passport Photo"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "default": "+971",
+   "fieldname": "phone_country_code",
+   "fieldtype": "Data",
+   "label": "Phone Country Code"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "male\nfemale\nother",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "profile_photo",
+   "fieldtype": "Attach Image",
+   "label": "Profile Photo"
+  },
+  {
+   "default": "en",
+   "fieldname": "language_preference",
+   "fieldtype": "Data",
+   "label": "Language Preference"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_verified",
+   "fieldtype": "Check",
+   "label": "Is Verified"
+  },
+  {
+   "fieldname": "otp",
+   "fieldtype": "Data",
+   "label": "Otp"
+  },
+  {
+   "fieldname": "otp_expires_at",
+   "fieldtype": "Datetime",
+   "label": "Otp Expires At"
+  },
+  {
+   "default": "0",
+   "fieldname": "data_consent_given",
+   "fieldtype": "Check",
+   "label": "Data Consent Given"
+  },
+  {
+   "fieldname": "data_consent_at",
+   "fieldtype": "Datetime",
+   "label": "Data Consent At"
+  },
+  {
+   "fieldname": "data_consent_ip",
+   "fieldtype": "Data",
+   "label": "Data Consent Ip"
+  },
+  {
+   "default": "0",
+   "fieldname": "sharing_consent_given",
+   "fieldtype": "Check",
+   "label": "Sharing Consent Given"
+  },
+  {
+   "fieldname": "sharing_consent_at",
+   "fieldtype": "Datetime",
+   "label": "Sharing Consent At",
+   "options": "sharing_consent_at"
+  },
+  {
+   "default": "0",
+   "fieldname": "medical_consent_given",
+   "fieldtype": "Check",
+   "label": "Medical Consent Given"
+  },
+  {
+   "default": "0",
+   "fieldname": "medical_consent_at",
+   "fieldtype": "Check",
+   "label": "Medical Consent At"
+  },
+  {
+   "fieldname": "teleconsult_recording_consent",
+   "fieldtype": "Datetime",
+   "label": "Teleconsult Recording Consent"
+  },
+  {
+   "fieldname": "column_break_giig",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "account_status",
+   "fieldtype": "Select",
+   "label": "Account Status",
+   "options": "pending\nactive\nexpired\nsuspended\ndeleted"
+  },
+  {
+   "fieldname": "last_login_at",
+   "fieldtype": "Datetime",
+   "label": "Last Login At"
+  },
+  {
+   "fieldname": "last_login_ip",
+   "fieldtype": "Data",
+   "label": "Last Login Ip"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Datetime",
+   "label": "Updated At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "data_retention_until",
+   "fieldtype": "Datetime",
+   "label": "Data Retention Until"
+  },
+  {
+   "fieldname": "user_link",
+   "fieldtype": "Data",
+   "label": "User Link"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-04 16:20:59.874990",
+ "modified_by": "Administrator",
+ "module": "App Users",
+ "name": "App Users",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

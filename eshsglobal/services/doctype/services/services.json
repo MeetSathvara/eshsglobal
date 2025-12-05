@@ -1,0 +1,220 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-04 18:13:22.230574",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "category_id",
+  "parent_service_id",
+  "service_name",
+  "slug",
+  "description",
+  "short_description",
+  "preparation_instructions",
+  "duration_minutes",
+  "base_price",
+  "discount_price",
+  "is_express_available",
+  "express_surcharge",
+  "is_package",
+  "requires_prescription",
+  "requires_fasting",
+  "sample_type",
+  "test_code",
+  "parameters_included",
+  "report_delivery_hours",
+  "icon",
+  "image",
+  "display_order",
+  "is_active",
+  "is_featured",
+  "is_popular",
+  "created_at",
+  "updated_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "category_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Category ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "parent_service_id",
+   "fieldtype": "Int",
+   "label": "Parent Service ID"
+  },
+  {
+   "fieldname": "service_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Service Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "slug",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Slug",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "short_description",
+   "fieldtype": "Data",
+   "label": "Short Description"
+  },
+  {
+   "fieldname": "preparation_instructions",
+   "fieldtype": "Text",
+   "label": "Preparation Instructions"
+  },
+  {
+   "fieldname": "duration_minutes",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Duration Minutes",
+   "reqd": 1
+  },
+  {
+   "fieldname": "base_price",
+   "fieldtype": "Float",
+   "label": "Base Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "discount_price",
+   "fieldtype": "Float",
+   "label": "Discount Price"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_express_available",
+   "fieldtype": "Check",
+   "label": "Is Express Available"
+  },
+  {
+   "default": "0",
+   "fieldname": "express_surcharge",
+   "fieldtype": "Float",
+   "label": "Express Surcharge"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_package",
+   "fieldtype": "Check",
+   "label": "Is Package"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_prescription",
+   "fieldtype": "Check",
+   "label": "Requires Prescription"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_fasting",
+   "fieldtype": "Check",
+   "label": "Requires Fasting"
+  },
+  {
+   "fieldname": "sample_type",
+   "fieldtype": "Data",
+   "label": "Sample Type"
+  },
+  {
+   "fieldname": "test_code",
+   "fieldtype": "Data",
+   "label": "Test Code"
+  },
+  {
+   "fieldname": "parameters_included",
+   "fieldtype": "Text",
+   "label": "Parameters Included"
+  },
+  {
+   "default": "24",
+   "fieldname": "report_delivery_hours",
+   "fieldtype": "Int",
+   "label": "Report Delivery Hours"
+  },
+  {
+   "fieldname": "icon",
+   "fieldtype": "Attach Image",
+   "label": "Icon"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "default": "0",
+   "fieldname": "display_order",
+   "fieldtype": "Int",
+   "label": "Display Order"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_featured",
+   "fieldtype": "Check",
+   "label": "Is Featured"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_popular",
+   "fieldtype": "Check",
+   "label": "Is Popular"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At"
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Datetime",
+   "label": "Updated At"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-04 18:42:22.096790",
+ "modified_by": "Administrator",
+ "module": "Services",
+ "name": "Services",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

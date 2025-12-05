@@ -1,0 +1,298 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-05 13:23:28.850215",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "booking_number",
+  "user_id",
+  "patient_id",
+  "patient_type",
+  "address_id",
+  "provider_id",
+  "service_category_id",
+  "booking_type",
+  "appointment_date",
+  "appointment_time",
+  "estimated_duration_minutes",
+  "is_express",
+  "subtotal",
+  "express_charges",
+  "discount_amount",
+  "total_amount",
+  "payment_method",
+  "payment_status",
+  "booking_status",
+  "cancellation_reason",
+  "cancelled_by",
+  "cancelled_at",
+  "special_instructions",
+  "prescription_required",
+  "prescription_url",
+  "provider_accepted_at",
+  "provider_started_at",
+  "provider_arrived_at",
+  "service_started_at",
+  "service_completed_at",
+  "verification_otp",
+  "otp_generated_at",
+  "otp_verified_at",
+  "otp_verified_by",
+  "rating",
+  "review",
+  "reviewed_at",
+  "created_at",
+  "updated_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "booking_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Booking Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "User Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient_id",
+   "fieldtype": "Int",
+   "label": "Patient Id"
+  },
+  {
+   "fieldname": "patient_type",
+   "fieldtype": "Select",
+   "label": "Patient Type",
+   "options": "self\nfamily_member"
+  },
+  {
+   "fieldname": "address_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Address Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "provider_id",
+   "fieldtype": "Int",
+   "label": "Provider Id"
+  },
+  {
+   "fieldname": "service_category_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Service Category Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "booking_type",
+   "fieldtype": "Select",
+   "label": "Booking Type",
+   "options": "pathology\nradiology\ndoctor_visit\nteleconsult\nnursing\nphysiotherapy",
+   "reqd": 1
+  },
+  {
+   "fieldname": "appointment_date",
+   "fieldtype": "Date",
+   "label": "Appointment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "appointment_time",
+   "fieldtype": "Datetime",
+   "label": "Appointment Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estimated_duration_minutes",
+   "fieldtype": "Int",
+   "label": "Estimated Duration Minutes",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_express",
+   "fieldtype": "Check",
+   "label": "Is Express"
+  },
+  {
+   "fieldname": "subtotal",
+   "fieldtype": "Float",
+   "label": "Subtotal",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "express_charges",
+   "fieldtype": "Float",
+   "label": "Express Charges"
+  },
+  {
+   "default": "0",
+   "fieldname": "discount_amount",
+   "fieldtype": "Float",
+   "label": "Discount Amount"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Select",
+   "label": "Payment Method",
+   "options": "card\napple_pay\ngoogle_pay\nwallet\ncash",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "pending\npaid\nfailed\nrefunded\npartial_refund"
+  },
+  {
+   "fieldname": "booking_status",
+   "fieldtype": "Select",
+   "label": "Booking Status",
+   "options": "pending\nconfirmed\nprovider_assigned\nprovider_en_route\nin_progress\ncompleted\ncancelled\nrescheduled"
+  },
+  {
+   "fieldname": "cancellation_reason",
+   "fieldtype": "Text",
+   "label": "Cancellation Reason"
+  },
+  {
+   "fieldname": "cancelled_by",
+   "fieldtype": "Select",
+   "label": "Cancelled By",
+   "options": "user\nprovider\nadmin"
+  },
+  {
+   "fieldname": "cancelled_at",
+   "fieldtype": "Datetime",
+   "label": "Cancelled At"
+  },
+  {
+   "fieldname": "special_instructions",
+   "fieldtype": "Text",
+   "label": "Special Instructions"
+  },
+  {
+   "default": "0",
+   "fieldname": "prescription_required",
+   "fieldtype": "Check",
+   "label": "Prescription Required"
+  },
+  {
+   "fieldname": "prescription_url",
+   "fieldtype": "Data",
+   "label": "Prescription URL"
+  },
+  {
+   "fieldname": "provider_accepted_at",
+   "fieldtype": "Datetime",
+   "label": "Provider Accepted At"
+  },
+  {
+   "fieldname": "provider_started_at",
+   "fieldtype": "Datetime",
+   "label": "Provider Started At"
+  },
+  {
+   "fieldname": "provider_arrived_at",
+   "fieldtype": "Datetime",
+   "label": "Provider Arrived At"
+  },
+  {
+   "fieldname": "service_started_at",
+   "fieldtype": "Datetime",
+   "label": "Service Started At"
+  },
+  {
+   "fieldname": "service_completed_at",
+   "fieldtype": "Datetime",
+   "label": "Service Completed At"
+  },
+  {
+   "fieldname": "verification_otp",
+   "fieldtype": "Data",
+   "label": "Verification OTP"
+  },
+  {
+   "fieldname": "otp_generated_at",
+   "fieldtype": "Datetime",
+   "label": "OTP Generated At"
+  },
+  {
+   "fieldname": "otp_verified_at",
+   "fieldtype": "Datetime",
+   "label": "OTP Verified At"
+  },
+  {
+   "fieldname": "otp_verified_by",
+   "fieldtype": "Int",
+   "label": "OTP Verified By"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Int",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "review",
+   "fieldtype": "Text",
+   "label": "Review"
+  },
+  {
+   "fieldname": "reviewed_at",
+   "fieldtype": "Datetime",
+   "label": "Reviewed At"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At"
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Datetime",
+   "label": "Updated At"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-05 14:17:19.730908",
+ "modified_by": "Administrator",
+ "module": "Bookings",
+ "name": "Bookings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
