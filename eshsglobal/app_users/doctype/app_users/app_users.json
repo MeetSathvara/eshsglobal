@@ -196,7 +196,7 @@
   },
   {
    "fieldname": "medical_consent_at",
-   "fieldtype": "Int",
+   "fieldtype": "Datetime",
    "label": "Medical Consent At"
   },
   {
@@ -250,7 +250,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-06 18:31:34.735320",
+ "modified": "2025-12-06 18:53:02.146720",
  "modified_by": "Administrator",
  "module": "App Users",
  "name": "App Users",
