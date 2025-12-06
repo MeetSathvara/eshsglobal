@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-06 15:34:01.724510",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user_id",
+  "consent_type",
+  "consent_given",
+  "consent_text",
+  "consent_version",
+  "consented_at",
+  "revoked_at",
+  "ip_addredd",
+  "user_agent",
+  "signature_data",
+  "witness_name",
+  "created_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User Id",
+   "options": "App Users",
+   "reqd": 1
+  },
+  {
+   "fieldname": "consent_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Consent Type",
+   "options": "data_collection\ndata_sharing\nmedical_treatment\nteleconsult_recording\nmarketing\nresearch",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "consent_given",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Consent Given",
+   "reqd": 1
+  },
+  {
+   "fieldname": "consent_text",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Consent Text",
+   "reqd": 1
+  },
+  {
+   "fieldname": "consent_version",
+   "fieldtype": "Data",
+   "label": "Consent Version",
+   "reqd": 1
+  },
+  {
+   "fieldname": "consented_at",
+   "fieldtype": "Datetime",
+   "label": "Consented At"
+  },
+  {
+   "fieldname": "revoked_at",
+   "fieldtype": "Datetime",
+   "label": "Revoked At"
+  },
+  {
+   "fieldname": "ip_addredd",
+   "fieldtype": "Data",
+   "label": "IP Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user_agent",
+   "fieldtype": "Text",
+   "label": "User Agent"
+  },
+  {
+   "fieldname": "signature_data",
+   "fieldtype": "Text",
+   "label": "Signature Data"
+  },
+  {
+   "fieldname": "witness_name",
+   "fieldtype": "Data",
+   "label": "Witness Name"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-06 18:11:18.167348",
+ "modified_by": "Administrator",
+ "module": "Consent Records",
+ "name": "Consent Records",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

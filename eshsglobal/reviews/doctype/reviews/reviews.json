@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-06 12:24:44.921866",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "booking_id",
+  "user_id",
+  "provider_id",
+  "service_rating",
+  "provider_rating",
+  "punctuality_rating",
+  "professionalism_rating",
+  "review_text",
+  "tags",
+  "is_verified",
+  "is_published",
+  "admin_response",
+  "created_at",
+  "updated_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "booking_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Booking Id",
+   "options": "Bookings",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User Id",
+   "options": "App Users",
+   "reqd": 1
+  },
+  {
+   "fieldname": "provider_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Provider Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_rating",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Service Rating",
+   "reqd": 1
+  },
+  {
+   "fieldname": "provider_rating",
+   "fieldtype": "Int",
+   "label": "Provider Rating",
+   "reqd": 1
+  },
+  {
+   "fieldname": "punctuality_rating",
+   "fieldtype": "Int",
+   "label": "Punctuality Rating"
+  },
+  {
+   "fieldname": "professionalism_rating",
+   "fieldtype": "Int",
+   "label": "Professionalism Rating"
+  },
+  {
+   "fieldname": "review_text",
+   "fieldtype": "Text",
+   "label": "Review Text"
+  },
+  {
+   "fieldname": "tags",
+   "fieldtype": "Data",
+   "label": "Tags"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_verified",
+   "fieldtype": "Check",
+   "label": "Is Verified"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  },
+  {
+   "fieldname": "admin_response",
+   "fieldtype": "Text",
+   "label": "Admin Response"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At"
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Datetime",
+   "label": "Updated At"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-06 12:28:28.286848",
+ "modified_by": "Administrator",
+ "module": "Reviews",
+ "name": "Reviews",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

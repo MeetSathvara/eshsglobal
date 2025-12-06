@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-06 14:28:27.099896",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user_id",
+  "provider_id",
+  "session_token",
+  "device_id",
+  "ip_address",
+  "user_agent",
+  "login_at",
+  "last_activity_at",
+  "logout_at",
+  "is_active",
+  "auto_logout_reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User Id",
+   "options": "App Users",
+   "reqd": 1
+  },
+  {
+   "fieldname": "provider_id",
+   "fieldtype": "Int",
+   "label": "Provider Id"
+  },
+  {
+   "fieldname": "session_token",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Session Token",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "device_id",
+   "fieldtype": "Data",
+   "label": "Device Id"
+  },
+  {
+   "fieldname": "ip_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "IP Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user_agent",
+   "fieldtype": "Text",
+   "label": "User Agent"
+  },
+  {
+   "fieldname": "login_at",
+   "fieldtype": "Datetime",
+   "label": "Login At"
+  },
+  {
+   "fieldname": "last_activity_at",
+   "fieldtype": "Datetime",
+   "label": "Last Activity At"
+  },
+  {
+   "fieldname": "logout_at",
+   "fieldtype": "Datetime",
+   "label": "Logout At"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "auto_logout_reason",
+   "fieldtype": "Data",
+   "label": "Auto Logout Reason"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-06 14:35:54.309591",
+ "modified_by": "Administrator",
+ "module": "User Sessions",
+ "name": "User Sessions",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

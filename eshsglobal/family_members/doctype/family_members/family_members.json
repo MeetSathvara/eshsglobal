@@ -43,7 +43,7 @@
   },
   {
    "fieldname": "emirates_id_expiry_date",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "Emirates ID Expiry Date"
   },
   {
@@ -64,7 +64,7 @@
   },
   {
    "fieldname": "passport_expiry_date",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "Passport Expiry Date"
   },
   {
@@ -88,7 +88,7 @@
   },
   {
    "fieldname": "date_of_birth",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "Date of Birth",
    "reqd": 1
   },
@@ -151,7 +151,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-05 17:19:41.353115",
+ "modified": "2025-12-05 19:07:37.083249",
  "modified_by": "Administrator",
  "module": "Family Members",
  "name": "Family Members",

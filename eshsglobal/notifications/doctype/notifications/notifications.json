@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-06 12:01:45.176380",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user_id",
+  "notification_type",
+  "title",
+  "message",
+  "data",
+  "reference_type",
+  "reference_id",
+  "is_read",
+  "read_at",
+  "is_sent",
+  "sent_at",
+  "created_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "label": "User Id",
+   "options": "App Users"
+  },
+  {
+   "fieldname": "notification_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Notification Type",
+   "options": "booking_confirmed\nprovider_assigned\nprovider_enroute\nservice_completed\nreport_ready\npayment_success\npayment_failed\nreminder\noffer\ngeneral",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Message",
+   "reqd": 1
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "JSON",
+   "label": "Data"
+  },
+  {
+   "fieldname": "reference_type",
+   "fieldtype": "Select",
+   "label": "Reference Type",
+   "options": "booking\nreport\npayment\noffer"
+  },
+  {
+   "fieldname": "reference_id",
+   "fieldtype": "Int",
+   "label": "Reference Id"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_read",
+   "fieldtype": "Check",
+   "label": "Is Read"
+  },
+  {
+   "fieldname": "read_at",
+   "fieldtype": "Datetime",
+   "label": "Read At"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_sent",
+   "fieldtype": "Check",
+   "label": "Is Sent"
+  },
+  {
+   "fieldname": "sent_at",
+   "fieldtype": "Datetime",
+   "label": "Sent At"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-06 12:05:13.937963",
+ "modified_by": "Administrator",
+ "module": "Notifications",
+ "name": "Notifications",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

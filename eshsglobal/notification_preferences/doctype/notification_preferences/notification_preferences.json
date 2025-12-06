@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-06 12:07:07.072817",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user_id",
+  "push_enabled",
+  "email_enabled",
+  "sms_enabled",
+  "booking_updates",
+  "report_ready",
+  "offers_promotions",
+  "reminders",
+  "created_at",
+  "updated_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "label": "User Id",
+   "options": "App Users"
+  },
+  {
+   "default": "1",
+   "fieldname": "push_enabled",
+   "fieldtype": "Check",
+   "label": "Push Enabled"
+  },
+  {
+   "default": "1",
+   "fieldname": "email_enabled",
+   "fieldtype": "Check",
+   "label": "Email Enabled"
+  },
+  {
+   "default": "1",
+   "fieldname": "sms_enabled",
+   "fieldtype": "Check",
+   "label": "SMS Enabled"
+  },
+  {
+   "default": "1",
+   "fieldname": "booking_updates",
+   "fieldtype": "Check",
+   "label": "Booking Updates"
+  },
+  {
+   "default": "1",
+   "fieldname": "report_ready",
+   "fieldtype": "Check",
+   "label": "Report Ready"
+  },
+  {
+   "default": "1",
+   "fieldname": "offers_promotions",
+   "fieldtype": "Check",
+   "label": "Offers Promotions"
+  },
+  {
+   "default": "1",
+   "fieldname": "reminders",
+   "fieldtype": "Check",
+   "label": "Reminders"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At"
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Datetime",
+   "label": "Updated At"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-06 12:09:50.437819",
+ "modified_by": "Administrator",
+ "module": "Notification Preferences",
+ "name": "Notification Preferences",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

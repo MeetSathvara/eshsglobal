@@ -21,3 +21,29 @@ Booking Items
 Booking Tracking
 Booking Status History
 App Translation Label
+Cart Items
+Payments
+Wallet
+Wallet Transactions
+Reports
+Ai Conversations
+Ai Messages
+Notifications
+Notification Preferences
+Support Tickets
+Support Messages
+Reviews
+App Settings
+Emergency Contacts
+Medical History
+Saved Cards
+User Activity Logs
+Search History
+User Sessions
+Audit Logs
+File Storage
+Consent Records
+Data Retention Log
+Backup Logs
+Mfa Tokens
+Password History

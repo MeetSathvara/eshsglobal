@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-06 18:14:49.236480",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "backup_type",
+  "backup_location",
+  "backup_size_bytes",
+  "backup_status",
+  "is_encrypted",
+  "encryption_algorithm",
+  "tables_included",
+  "records_count",
+  "started_at",
+  "completed_at",
+  "verified_at",
+  "verification_status",
+  "error_message",
+  "stored_in_uae",
+  "created_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "backup_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Backup Type",
+   "options": "full\nincremental\ndifferential",
+   "reqd": 1
+  },
+  {
+   "fieldname": "backup_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Backup Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "backup_size_bytes",
+   "fieldtype": "Int",
+   "label": "Backup Size Bytes"
+  },
+  {
+   "fieldname": "backup_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Backup Status",
+   "options": "started\nin_progress\ncompleted\nfailed",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_encrypted",
+   "fieldtype": "Check",
+   "label": "Is Encrypted"
+  },
+  {
+   "fieldname": "encryption_algorithm",
+   "fieldtype": "Data",
+   "label": "Encryption Algorithm"
+  },
+  {
+   "fieldname": "tables_included",
+   "fieldtype": "Text",
+   "label": "Tables Included"
+  },
+  {
+   "fieldname": "records_count",
+   "fieldtype": "Int",
+   "label": "Records Count"
+  },
+  {
+   "fieldname": "started_at",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Started At",
+   "reqd": 1
+  },
+  {
+   "fieldname": "completed_at",
+   "fieldtype": "Datetime",
+   "label": "Completed At"
+  },
+  {
+   "fieldname": "verified_at",
+   "fieldtype": "Datetime",
+   "label": "Verified At"
+  },
+  {
+   "fieldname": "verification_status",
+   "fieldtype": "Select",
+   "label": "Verification Status",
+   "options": "pending\npassed\nfailed"
+  },
+  {
+   "fieldname": "error_message",
+   "fieldtype": "Text",
+   "label": "Error Message"
+  },
+  {
+   "default": "1",
+   "fieldname": "stored_in_uae",
+   "fieldtype": "Check",
+   "label": "Stored in UAE"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-06 18:19:09.265121",
+ "modified_by": "Administrator",
+ "module": "Backup Logs",
+ "name": "Backup Logs",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

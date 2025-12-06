@@ -1,0 +1,248 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-06 11:04:07.307391",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "booking_id",
+  "booking_item_id",
+  "user_id",
+  "patient_id",
+  "patient_type",
+  "report_type",
+  "report_number",
+  "service_name",
+  "test_date",
+  "report_date",
+  "performed_by_provider_id",
+  "verified_by",
+  "file_storage_id",
+  "report_file_url",
+  "report_file_type",
+  "lab_results",
+  "lab_results_encrypted",
+  "clinical_notes",
+  "clinical_notes_encrypted",
+  "diagnosis",
+  "diagnosis_encrypted",
+  "recommendations",
+  "recommendations_encrypted",
+  "followup_required",
+  "followup_date",
+  "is_critical",
+  "critical_notes",
+  "critical_notes_encrypted",
+  "status",
+  "retention_until",
+  "created_at",
+  "updated_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "booking_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Booking Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "booking_item_id",
+   "fieldtype": "Int",
+   "label": "Booking Item Id"
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User Id",
+   "options": "App Users",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient_id",
+   "fieldtype": "Int",
+   "label": "Patient Id"
+  },
+  {
+   "fieldname": "patient_type",
+   "fieldtype": "Select",
+   "label": "Patient Type",
+   "options": "self\nfamily_member"
+  },
+  {
+   "fieldname": "report_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Report Type",
+   "options": "pathology\nradiology\ndoctor_notes\nnursing_notes\nphysiotherapy_notes",
+   "reqd": 1
+  },
+  {
+   "fieldname": "report_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Report Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "service_name",
+   "fieldtype": "Data",
+   "label": "Service Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Datetime",
+   "label": "Test Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Datetime",
+   "label": "Report Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "performed_by_provider_id",
+   "fieldtype": "Int",
+   "label": "Performed By Provider Id"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Data",
+   "label": "Verified By"
+  },
+  {
+   "fieldname": "file_storage_id",
+   "fieldtype": "Int",
+   "label": "File Storage Id"
+  },
+  {
+   "fieldname": "report_file_url",
+   "fieldtype": "Data",
+   "label": "Report File Url"
+  },
+  {
+   "fieldname": "report_file_type",
+   "fieldtype": "Data",
+   "label": "Report File Type"
+  },
+  {
+   "fieldname": "lab_results",
+   "fieldtype": "Text",
+   "label": "Lab Results"
+  },
+  {
+   "fieldname": "lab_results_encrypted",
+   "fieldtype": "Text",
+   "label": "Lab Results Encrypted"
+  },
+  {
+   "fieldname": "clinical_notes",
+   "fieldtype": "Text",
+   "label": "Clinical Notes"
+  },
+  {
+   "fieldname": "clinical_notes_encrypted",
+   "fieldtype": "Text",
+   "label": "Clinical Notes Encrypted"
+  },
+  {
+   "fieldname": "diagnosis",
+   "fieldtype": "Text",
+   "label": "Diagnosis"
+  },
+  {
+   "fieldname": "diagnosis_encrypted",
+   "fieldtype": "Text",
+   "label": "Diagnosis Encrypted"
+  },
+  {
+   "fieldname": "recommendations",
+   "fieldtype": "Text",
+   "label": "Recommendations"
+  },
+  {
+   "fieldname": "recommendations_encrypted",
+   "fieldtype": "Text",
+   "label": "Recommendations Encrypted"
+  },
+  {
+   "default": "0",
+   "fieldname": "followup_required",
+   "fieldtype": "Check",
+   "label": "Followup Required"
+  },
+  {
+   "fieldname": "followup_date",
+   "fieldtype": "Date",
+   "label": "Followup Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_critical",
+   "fieldtype": "Check",
+   "label": "Is Critical"
+  },
+  {
+   "fieldname": "critical_notes",
+   "fieldtype": "Text",
+   "label": "Critical Notes"
+  },
+  {
+   "fieldname": "critical_notes_encrypted",
+   "fieldtype": "Text",
+   "label": "Critical Notes Encrypted"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "pending\nin_progress\ncompleted\nverified"
+  },
+  {
+   "fieldname": "retention_until",
+   "fieldtype": "Datetime",
+   "label": "Retention Until"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At"
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Datetime",
+   "label": "Updated At"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-06 11:50:17.535002",
+ "modified_by": "Administrator",
+ "module": "Reports",
+ "name": "Reports",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

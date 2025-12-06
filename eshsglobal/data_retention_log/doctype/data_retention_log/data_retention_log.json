@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-06 18:12:06.025419",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "table_name",
+  "record_id",
+  "retention_period_years",
+  "created_at",
+  "retention_until",
+  "archived_at",
+  "archive_location",
+  "is_archived",
+  "can_be_deleted_after"
+ ],
+ "fields": [
+  {
+   "fieldname": "table_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Table Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "record_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Record Id",
+   "reqd": 1
+  },
+  {
+   "default": "25",
+   "fieldname": "retention_period_years",
+   "fieldtype": "Int",
+   "label": "Retention Period Years"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Created At",
+   "reqd": 1
+  },
+  {
+   "fieldname": "retention_until",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Retention Until",
+   "reqd": 1
+  },
+  {
+   "fieldname": "archived_at",
+   "fieldtype": "Datetime",
+   "label": "Archived At"
+  },
+  {
+   "fieldname": "archive_location",
+   "fieldtype": "Data",
+   "label": "Archive Location"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_archived",
+   "fieldtype": "Check",
+   "label": "Is Archived"
+  },
+  {
+   "fieldname": "can_be_deleted_after",
+   "fieldtype": "Datetime",
+   "label": "Can Be Deleted After"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-06 18:13:56.139584",
+ "modified_by": "Administrator",
+ "module": "Data Retention Log",
+ "name": "Data Retention Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

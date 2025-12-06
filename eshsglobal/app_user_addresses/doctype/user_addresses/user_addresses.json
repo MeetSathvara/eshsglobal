@@ -27,9 +27,10 @@
  "fields": [
   {
    "fieldname": "user_id",
-   "fieldtype": "Int",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "User ID",
+   "options": "App Users",
    "reqd": 1
   },
   {
@@ -134,7 +135,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-04 17:20:39.882985",
+ "modified": "2025-12-06 12:43:07.575210",
  "modified_by": "Administrator",
  "module": "App User Addresses",
  "name": "User Addresses",

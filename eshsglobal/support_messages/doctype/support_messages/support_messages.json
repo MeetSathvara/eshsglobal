@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-06 12:20:37.368005",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ticket_id",
+  "sender_type",
+  "message",
+  "attachment_url",
+  "created_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "ticket_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Ticket Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sender_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sender Type",
+   "options": "user\nsupport",
+   "reqd": 1
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Message",
+   "reqd": 1
+  },
+  {
+   "fieldname": "attachment_url",
+   "fieldtype": "Data",
+   "label": "Attachment Url"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-06 12:23:01.301035",
+ "modified_by": "Administrator",
+ "module": "Support Messages",
+ "name": "Support Messages",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

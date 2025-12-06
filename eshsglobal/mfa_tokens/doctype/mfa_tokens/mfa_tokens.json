@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-06 18:27:17.045022",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "provider_id",
+  "token_type",
+  "token_value",
+  "is_verified",
+  "verified_at",
+  "expires_at",
+  "attempts_count",
+  "max_attempts",
+  "is_used",
+  "created_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "provider_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Provider Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "token_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Token Type",
+   "options": "totp\nsms\nemail\nbackup_code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "token_value",
+   "fieldtype": "Data",
+   "label": "Token Value"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_verified",
+   "fieldtype": "Check",
+   "label": "Is Verified"
+  },
+  {
+   "fieldname": "verified_at",
+   "fieldtype": "Datetime",
+   "label": "Verified At"
+  },
+  {
+   "fieldname": "expires_at",
+   "fieldtype": "Datetime",
+   "label": "Expires At"
+  },
+  {
+   "default": "0",
+   "fieldname": "attempts_count",
+   "fieldtype": "Int",
+   "label": "Attempts Count"
+  },
+  {
+   "default": "3",
+   "fieldname": "max_attempts",
+   "fieldtype": "Int",
+   "label": "Max Attempts"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_used",
+   "fieldtype": "Check",
+   "label": "Is Used"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-06 18:30:02.601762",
+ "modified_by": "Administrator",
+ "module": "Mfa Tokens",
+ "name": "Mfa Tokens",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

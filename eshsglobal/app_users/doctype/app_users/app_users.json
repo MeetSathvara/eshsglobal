@@ -57,7 +57,6 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Emirates Id",
-   "reqd": 1,
    "unique": 1
   },
   {
@@ -98,7 +97,8 @@
   {
    "fieldname": "phone",
    "fieldtype": "Data",
-   "label": "Phone"
+   "label": "Phone",
+   "reqd": 1
   },
   {
    "default": "+971",
@@ -126,8 +126,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Gender",
-   "options": "male\nfemale\nother",
-   "reqd": 1
+   "options": "male\nfemale\nother"
   },
   {
    "fieldname": "nationality",
@@ -196,9 +195,8 @@
    "label": "Medical Consent Given"
   },
   {
-   "default": "0",
    "fieldname": "medical_consent_at",
-   "fieldtype": "Check",
+   "fieldtype": "Int",
    "label": "Medical Consent At"
   },
   {
@@ -252,7 +250,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-04 16:20:59.874990",
+ "modified": "2025-12-06 18:31:34.735320",
  "modified_by": "Administrator",
  "module": "App Users",
  "name": "App Users",

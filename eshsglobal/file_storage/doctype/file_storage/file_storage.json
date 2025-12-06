@@ -1,0 +1,253 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-06 14:52:43.798301",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "uuid",
+  "user_id",
+  "provider_id",
+  "booking_id",
+  "report_id",
+  "file_type",
+  "original_filename",
+  "stored_filename",
+  "file_path",
+  "file_size_bytes",
+  "mime_type",
+  "file_extension",
+  "storage_provider",
+  "bucket_name",
+  "encryption_algorithm",
+  "encryption_key_id",
+  "encryption_iv",
+  "encryption_tag",
+  "checksum_sha256",
+  "is_encrypted",
+  "is_phi",
+  "uploaded_by_user_id",
+  "uploaded_by_provider_id",
+  "uploaded_at",
+  "last_accessed_at",
+  "access_count",
+  "presigned_url_expires_at",
+  "is_deleted",
+  "deleted_at",
+  "retention_until",
+  "created_at",
+  "updated_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "uuid",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "UUID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "label": "User Id",
+   "options": "App Users"
+  },
+  {
+   "fieldname": "provider_id",
+   "fieldtype": "Int",
+   "label": "Provider Id"
+  },
+  {
+   "fieldname": "booking_id",
+   "fieldtype": "Link",
+   "label": "Booking Id",
+   "options": "Bookings"
+  },
+  {
+   "fieldname": "report_id",
+   "fieldtype": "Int",
+   "label": "Report Id"
+  },
+  {
+   "fieldname": "file_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "File Type",
+   "options": "lab_result\nradiology_image\nprescription\nmedical_report\nconsultation_recording\nemirates_id\nlicense_document\nother",
+   "reqd": 1
+  },
+  {
+   "fieldname": "original_filename",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Original Filename",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stored_filename",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Stored Filename",
+   "reqd": 1
+  },
+  {
+   "fieldname": "file_path",
+   "fieldtype": "Data",
+   "label": "File Path",
+   "reqd": 1
+  },
+  {
+   "fieldname": "file_size_bytes",
+   "fieldtype": "Data",
+   "label": "File Size Bytes",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mime_type",
+   "fieldtype": "Data",
+   "label": "Mime Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "file_extension",
+   "fieldtype": "Data",
+   "label": "File Extension"
+  },
+  {
+   "fieldname": "storage_provider",
+   "fieldtype": "Select",
+   "label": "Storage Provider",
+   "options": "aws_s3_uae\nazure_uae\ng42_cloud\nlocal_uae",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bucket_name",
+   "fieldtype": "Data",
+   "label": "Bucket Name"
+  },
+  {
+   "default": "AES-256-GCM",
+   "fieldname": "encryption_algorithm",
+   "fieldtype": "Data",
+   "label": "Encryption Algorithm"
+  },
+  {
+   "fieldname": "encryption_key_id",
+   "fieldtype": "Data",
+   "label": "Encryption Key Id"
+  },
+  {
+   "fieldname": "encryption_iv",
+   "fieldtype": "Data",
+   "label": "Encryption IV"
+  },
+  {
+   "fieldname": "encryption_tag",
+   "fieldtype": "Data",
+   "label": "Encryption Tag"
+  },
+  {
+   "fieldname": "checksum_sha256",
+   "fieldtype": "Data",
+   "label": "Checksum SHA256",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_encrypted",
+   "fieldtype": "Check",
+   "label": "Is Encrypted"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_phi",
+   "fieldtype": "Check",
+   "label": "Is PHI"
+  },
+  {
+   "fieldname": "uploaded_by_user_id",
+   "fieldtype": "Int",
+   "label": "Uploaded By User Id"
+  },
+  {
+   "fieldname": "uploaded_by_provider_id",
+   "fieldtype": "Int",
+   "label": "Uploaded By Provider Id"
+  },
+  {
+   "fieldname": "uploaded_at",
+   "fieldtype": "Datetime",
+   "label": "Uploaded At"
+  },
+  {
+   "fieldname": "last_accessed_at",
+   "fieldtype": "Datetime",
+   "label": "Last Accessed At"
+  },
+  {
+   "default": "0",
+   "fieldname": "access_count",
+   "fieldtype": "Int",
+   "label": "Access Count"
+  },
+  {
+   "fieldname": "presigned_url_expires_at",
+   "fieldtype": "Datetime",
+   "label": "Presigned URL Expires At"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_deleted",
+   "fieldtype": "Check",
+   "label": "Is Deleted"
+  },
+  {
+   "fieldname": "deleted_at",
+   "fieldtype": "Datetime",
+   "label": "Deleted At"
+  },
+  {
+   "fieldname": "retention_until",
+   "fieldtype": "Datetime",
+   "label": "Retention Until"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At"
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Datetime",
+   "label": "Updated At"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-06 15:15:43.252442",
+ "modified_by": "Administrator",
+ "module": "File Storage",
+ "name": "File Storage",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

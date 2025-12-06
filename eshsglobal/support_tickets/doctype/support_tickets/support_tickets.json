@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-06 12:12:29.992608",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ticket_number",
+  "user_id",
+  "booking_id",
+  "category",
+  "subject",
+  "description",
+  "priority",
+  "status",
+  "assigned_to",
+  "resolution_notes",
+  "resolved_at",
+  "created_at",
+  "updated_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "ticket_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ticket Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "label": "User Id",
+   "options": "App Users",
+   "reqd": 1
+  },
+  {
+   "fieldname": "booking_id",
+   "fieldtype": "Link",
+   "label": "Booking Id",
+   "options": "Bookings"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "booking_issue\npayment_issue\ntechnical_issue\nprovider_complaint\nreport_issue\nother",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "default": "medium",
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "low\nmedium\nhigh\nurgent"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "open\nin_progress\npending_user\nresolved\nclosed"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Data",
+   "label": "Assigned To"
+  },
+  {
+   "fieldname": "resolution_notes",
+   "fieldtype": "Text",
+   "label": "Resolution Notes"
+  },
+  {
+   "fieldname": "resolved_at",
+   "fieldtype": "Datetime",
+   "label": "Resolved At"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At"
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Datetime",
+   "label": "Updated At"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-06 12:19:21.051228",
+ "modified_by": "Administrator",
+ "module": "Support Tickets",
+ "name": "Support Tickets",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
