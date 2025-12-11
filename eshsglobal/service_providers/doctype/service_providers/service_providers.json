@@ -7,29 +7,22 @@
  "field_order": [
   "uuid",
   "emirates_id",
-  "emirates_id_encrypted",
   "emirates_id_expiry_date",
   "emirates_id_front_photo",
   "emirates_id_back_photo",
   "first_name",
-  "first_name_encrypted",
   "last_name",
-  "last_name_encrypted",
   "email",
-  "email_encrypted",
   "phone",
-  "phone_encrypted",
   "date_of_birth",
   "gender",
   "nationality",
   "profile_photo",
   "provider_type",
   "license_number",
-  "license_number_encrypted",
   "license_expiry",
   "license_issuing_authority",
   "dha_registration",
-  "dha_registration_encrypted",
   "clinic_hospital_name",
   "experience_years",
   "qualification",
@@ -68,58 +61,33 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Emirates Id",
-   "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "emirates_id_encrypted",
-   "fieldtype": "Text",
-   "in_list_view": 1,
-   "label": "Emirates Id Encrypted",
-   "reqd": 1
   },
   {
    "fieldname": "emirates_id_expiry_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Emirates Id Expiry Date",
-   "reqd": 1
+   "label": "Emirates Id Expiry Date"
   },
   {
    "fieldname": "emirates_id_front_photo",
    "fieldtype": "Attach Image",
-   "label": "Emirates Id Front Photo",
-   "reqd": 1
+   "label": "Emirates Id Front Photo"
   },
   {
    "fieldname": "emirates_id_back_photo",
    "fieldtype": "Attach Image",
-   "label": "Emirates Id Back Photo",
-   "reqd": 1
+   "label": "Emirates Id Back Photo"
   },
   {
    "fieldname": "first_name",
    "fieldtype": "Data",
-   "label": "First Name",
-   "reqd": 1
-  },
-  {
-   "fieldname": "first_name_encrypted",
-   "fieldtype": "Text",
-   "label": "First Name Encrypted",
-   "reqd": 1
+   "label": "First Name"
   },
   {
    "fieldname": "last_name",
    "fieldtype": "Data",
-   "label": "Last Name",
-   "reqd": 1
-  },
-  {
-   "fieldname": "last_name_encrypted",
-   "fieldtype": "Text",
-   "label": "Last Name Encrypted",
-   "reqd": 1
+   "label": "Last Name"
   },
   {
    "fieldname": "email",
@@ -128,22 +96,11 @@
    "unique": 1
   },
   {
-   "fieldname": "email_encrypted",
-   "fieldtype": "Text",
-   "label": "Email Encrypted"
-  },
-  {
    "fieldname": "phone",
    "fieldtype": "Data",
    "label": "Phone",
    "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "phone_encrypted",
-   "fieldtype": "Text",
-   "label": "Phone Encrypted",
-   "reqd": 1
   },
   {
    "fieldname": "date_of_birth",
@@ -170,44 +127,27 @@
    "fieldname": "provider_type",
    "fieldtype": "Select",
    "label": "Provider Type",
-   "options": "pathologist\nradiologist\ndoctor\nnurse\nphysiotherapist\ngeneral",
-   "reqd": 1
+   "options": "pathologist\nradiologist\ndoctor\nnurse\nphysiotherapist\ngeneral"
   },
   {
    "fieldname": "license_number",
    "fieldtype": "Data",
-   "label": "License Number",
-   "reqd": 1
-  },
-  {
-   "fieldname": "license_number_encrypted",
-   "fieldtype": "Text",
-   "label": "License Number Encrypted",
-   "reqd": 1
+   "label": "License Number"
   },
   {
    "fieldname": "license_expiry",
    "fieldtype": "Date",
-   "label": "License Expiry",
-   "reqd": 1
+   "label": "License Expiry"
   },
   {
    "fieldname": "license_issuing_authority",
    "fieldtype": "Data",
-   "label": "License Issuing Authority",
-   "reqd": 1
+   "label": "License Issuing Authority"
   },
   {
    "fieldname": "dha_registration",
    "fieldtype": "Data",
-   "label": "DHA Registration",
-   "reqd": 1
-  },
-  {
-   "fieldname": "dha_registration_encrypted",
-   "fieldtype": "Text",
-   "label": "DHA Registration Encrypted",
-   "reqd": 1
+   "label": "DHA Registration"
   },
   {
    "fieldname": "clinic_hospital_name",
@@ -337,7 +277,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-05 11:13:14.812262",
+ "modified": "2025-12-11 11:05:17.029148",
  "modified_by": "Administrator",
  "module": "Service Providers",
  "name": "Service Providers",
